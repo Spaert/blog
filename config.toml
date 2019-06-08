@@ -1,0 +1,68 @@
+baseurl = "https://spaert.github.io"
+languageCode = "en"
+title = "My New Hugo Site"
+theme = "hello-friend-ng"
+publishDir = "spaert.github.io"
+[params]  
+  dateform        = "June 8, 2019"
+  dateformShort   = "June 8"
+  dateformNum     = "2019-06-8"
+  dateformNumTime = "2019-06-8 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Homepage and blog by Djordje Atlialp"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+
+[[params.social]]
+    name = "email"
+    url  = "mailto:asd850620@gmail.com"
+
+[[params.social]]
+    name = "github"
+    url  = "https://github.com/Spaert"
+
+  
+[languages]
+  [languages.en]
+    title = "Hello World"
+    homesubtitle = "record my life"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "$cd /home/spaert"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+	# You can create a language based menu
+    #[languages.en.menu]
+    #  [[languages.en.menu.main]]
+    #    identifier = "about"
+    #    name = "About"
+    #    url = "/about"
+    #  [[languages.en.menu.main]]
+    #    identifier = "showcase"
+    #    name = "Showcase"
+    #    url = "/showcase"
+
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
