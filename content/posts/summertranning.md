@@ -1,15 +1,17 @@
 ---
 author:
   name: "Pei-Wen Shih"
-date: 2019-06-8
+date: 2019-06-08 09:00:00
+emoji: true
 linktitle: Insights into Bacterial Genome Sequence Analysis
-type:
-- post
-- posts
+tags:
+- genome assembly
+- third generation sequence
 title: Insights into Bacterial Genome Sequence Analysis
 weight: 10
-series:
-- Summer training
+series: Summer training
+toc : true
+
 ---
 
 ## Today goals

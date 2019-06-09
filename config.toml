@@ -3,6 +3,7 @@ languageCode = "en"
 title = "My New Hugo Site"
 theme = "hello-friend-ng"
 publishDir = "spaert.github.io"
+enableEmoji = true
 [params]  
   dateform        = "June 8, 2019"
   dateformShort   = "June 8"
@@ -17,8 +18,11 @@ publishDir = "spaert.github.io"
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
   # Default theme "light" or "dark"
-  defaultTheme = "dark"
-
+  defaultTheme = "light"
+  
+[taxonomies]
+  tag      = "tags"
+  category = ""
 
 [[params.social]]
     name = "email"
@@ -38,7 +42,7 @@ publishDir = "spaert.github.io"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "$cd /home/spaert"
+      logoText = "$cd /home/pei-wen"
       logoHomeLink = "/"
     # or
     #
