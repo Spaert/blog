@@ -1,14 +1,31 @@
 baseurl = "https://spaert.github.io"
 languageCode = "en"
-title = "My New Hugo Site"
+title = "Hello World"
 theme = "hello-friend-ng"
 publishDir = "spaert.github.io"
-enableEmoji = true
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+
+
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = true
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
 [params]  
   dateform        = "June 8, 2019"
   dateformShort   = "June 8"
   dateformNum     = "2019-06-8"
   dateformNumTime = "2019-06-8 15:04 -0700"
+
+  title = "Hello World"
+  homesubtitle = "record my life"
 
   # Metadata mostly used in document's head
   description = "Homepage and blog by Djordje Atlialp"
@@ -20,9 +37,7 @@ enableEmoji = true
   # Default theme "light" or "dark"
   defaultTheme = "light"
   
-[taxonomies]
-  tag      = "tags"
-  category = ""
+
 
 [[params.social]]
     name = "email"
@@ -32,7 +47,7 @@ enableEmoji = true
     name = "github"
     url  = "https://github.com/Spaert"
 
-  
+
 [languages]
   [languages.en]
     title = "Hello World"
