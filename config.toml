@@ -2,13 +2,12 @@ baseurl = "https://spaert.github.io"
 languageCode = "en"
 title = "Hello World"
 theme = "hello-friend-ng"
+
 publishDir = "spaert.github.io"
 archetypeDir = "archetypes"
 contentDir   = "content"
 dataDir      = "data"
 layoutDir    = "layouts"
-
-
 
 enableRobotsTXT = true
 enableGitInfo   = false
