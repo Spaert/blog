@@ -10,7 +10,6 @@ tags:
 title: Insights into Bacterial Genome Sequence Analysis
 weight: 10
 series: Summer training
-image : static
 toc : true
 ---
 
@@ -38,7 +37,6 @@ Lab ~~淺~~規則：兩週報一次、問問題
 # Things you should know before assembly
 
 ## Fastq format
-start with `@`
 
 ```
 @cc3e68c4-b53d-43da-be7e-b961113007e2          -> sequence name
@@ -48,8 +46,6 @@ ATCCGGAATCGGTTACTGTTGGGAACCTTTGC               -> sequence
 ```
 
 ## Fasta format
-
-start with `>`
 
 ```
 >tig00000001				           -> sequence name
@@ -67,7 +63,7 @@ $$
 
 ## Satuts of genome
 
-![genome status](http://ecoevo.unit.oist.jp/lab/wp-content/uploads/2013/08/GenomeAssembly.png)
+![Alt text](http://ecoevo.unit.oist.jp/lab/wp-content/uploads/2013/08/GenomeAssembly.png)
 
 ### 1. contig
 
@@ -79,27 +75,21 @@ $$
 
 ### 3. complete
 
-  A **circular** genome
+  ​A **circular** genome
 
-![complete genome](https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png)
+![Alt text](https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png)
 
 # Step to bacterial sequencing analysis
 
-![workflow](https://f1000researchdata.s3.amazonaws.com/manuscripts/14771/860b5457-c42e-40df-9829-10ecb2c4b092_figure2.gif)
+![Alt text](https://f1000researchdata.s3.amazonaws.com/manuscripts/14771/860b5457-c42e-40df-9829-10ecb2c4b092_figure2.gif)
 
-## Step 1. Quality Control - Assessing the quality of TGS
+## Step 1. Quality Control - Assessing the quality of TGS (Third Generation Sequencing)
 
 ### 1.1 Checking raw read statistics
 
 Tools : [abyss-fac](https://github.com/bcgsc/abyss)
 
-
-```
-$ abyss-fac -t 1 read.fastq contig.fasta
-```
-
-![read-abyssfac](/img/read-abyssfac.png)
-
+![Imgur](/Users/spaert/Documents/mysite/blog/content/posts/img/read-abyssfac.png)
 
 * n : Number of raw read
 
@@ -115,26 +105,5 @@ $ abyss-fac -t 1 read.fastq contig.fasta
 
 Tools : [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
+Input : Fastq
 
-```
-$ fastqc -f read.fastq -o outdir
-```
-
-## Step 2. Trimming Filtering Data - Preprocessing of raw data (optional)
-
-### 2.1 Filter raw read
-Tools : [filtlong](https://github.com/rrwick/Filtlong)
-
-Usually used in **coverage too high**, **trim too short reads**, and want to **keep raw read in between a range**
-
-
-### 2.2 Demultiplexing, Trimming adapter (barcode)
-Tools : [porechop](https://github.com/rrwick/Porechop)
-```
-$ porechop -i reads.fastq -o output.fastq # adapter trimming
-$ porechop -i reads.fastq -b output.fastq # demultiplexing 
-```
-
-## Step 3. Sequence Assembly - Long read genome assembly
-
-## Step 4. Assembly Validation 
