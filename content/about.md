@@ -2,17 +2,13 @@
 title = "About"
 date = "2019-06-07"
 [ author ]
-  name = "Hugo Authors"
+  name = "Pei-Wen Shih"
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
 
-It makes use of a variety of open source projects including:
+# 施佩妏 Pei-Wen Shih
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+目前於中正大學修讀碩士學位
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+研究領域主要在基因組裝及修正
+![skill](/img/skill.png)
