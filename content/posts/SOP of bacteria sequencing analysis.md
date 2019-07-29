@@ -24,7 +24,7 @@ toc : false
 
 2. Assembly
 
-   - Assembler tools ([Canu](https://canu.readthedocs.io/en/latest/quick-start.html), [Unicycler](https://github.com/rrwick/Unicycler), [Flye](https://github.com/fenderglass/Flye), [Ra](https://github.com/lbcb-sci/ra) …)
+   - Assembler tools ([Canu](https://canu.readthedocs.io/en/latest/quick-start.html), [Unicycler](https://github.com/rrwick/Unicycler), [Flye](https://github.com/fenderglass/Flye), [Ra](https://github.com/lbcb-sci/ra) ...)
 
    - Genome Polishing ([Racon](https://github.com/isovic/racon),  [medaka](https://nanoporetech.github.io/medaka/index.html), [nanopolish](https://nanopolish.readthedocs.io/en/latest/quickstart_consensus.html) ...)
 

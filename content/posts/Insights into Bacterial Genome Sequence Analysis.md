@@ -1,7 +1,7 @@
 ---
 author:
   name: "Pei-Wen Shih"
-date: 2019-06-07 09:00:00
+date: 2019-06-09T21:51:13+08:00
 emoji: true
 linktitle: Insights into Bacterial Genome Sequence Analysis
 tags:
@@ -79,7 +79,7 @@ $$
 
 ### 3. complete
 
-  A **circular** genome
+  Didn't have fragment, chromesome is in one contig
 
 ![complete genome](https://albertsenlab.org/wp-content/uploads/2017/11/longreadsVSshortreads.png)
 
@@ -129,7 +129,7 @@ Usually used in **coverage too high**, **trim too short reads**, and want to **k
 
 
 ### 2.2 Demultiplexing, Trimming adapter (barcode)
-Tools : [porechop](https://github.com/rrwick/Porechop)
+Tools : [porechop](https://github.com/rrwick/Porechop), [deepbinner](https://github.com/rrwick/Deepbinner)
 ```
 $ porechop -i reads.fastq -o output.fastq # adapter trimming
 $ porechop -i reads.fastq -b output.fastq # demultiplexing 
@@ -137,4 +137,41 @@ $ porechop -i reads.fastq -b output.fastq # demultiplexing
 
 ## Step 3. Sequence Assembly - Long read genome assembly
 
-## Step 4. Assembly Validation 
+### 3.1 De novo assembly
+	
+    
+    
+Tools : [Canu](https://canu.readthedocs.io/en/latest/quick-start.html), [Unicycler](https://github.com/rrwick/Unicycler), [Flye](https://github.com/fenderglass/Flye), [Ra](https://github.com/lbcb-sci/ra)
+
+```
+$ canu -p genomename -d outdir genomeSize=4.8m -nanopore-raw read.fastq
+$ unicycler -l read.fastq -o outdir
+		...
+```
+![de novo](https://pic.pimg.tw/yourgene/1336720283-823145476_n.png)
+## Step 4. Assembly Validation
+
+### 4.1 Assembly evaluation
+
+Tools: [abyss-fac](https://github.com/bcgsc/abyss), [assembly-stats](https://github.com/sanger-pathogens/assembly-stats)
+
+1. Total assembly size
+2. Total number of sequence
+3. Longest contig
+4. Average contig size 
+5. N50
+
+### 4.2 Assembly status graph
+
+Tools : [Bandage](https://rrwick.github.io/Bandage/)
+
+Is it circular or linear ?
+
+### 4.3 Sequence Similarity Search
+
+Tools : [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi), [MiGA](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+
+### 4.4 Quality of genomes
+
+Tools : [Checkm](https://ecogenomics.github.io/CheckM/), [busco](https://busco.ezlab.org/)
+
