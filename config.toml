@@ -18,10 +18,10 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 [params]  
-  dateform        = "June 8, 2019"
-  dateformShort   = "June 8"
-  dateformNum     = "2019-06-8"
-  dateformNumTime = "2019-06-8 15:04 -0700"
+  #dateform        = "June 8, 2019"
+  #dateformShort   = "June 8"
+  #dateformNum     = "2019-06-8"
+  #dateformNumTime = "2019-06-8 15:04 -0700"
 
   title = "Hello World"
   homesubtitle = "record my life"

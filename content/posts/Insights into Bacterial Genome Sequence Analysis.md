@@ -16,8 +16,6 @@ toc : true
 
 # Today goals
 
-* Introduction - A little about me, lab(~~gossip~~)
-
 * Things you should know before assembly
   1. Fastq format
   2. Fasta format
@@ -25,15 +23,6 @@ toc : true
   4. Status of genome
 * Step to bacterial sequencing analysis
 
-# Introduction - A little about me, lab(~~gossip~~)
-
-名字： 施佩妏 :smile:
-
-興趣：看美劇、實況、吃雞肉飯
-
-畢業前目標：把嘉義雞肉飯吃一遍
-
-Lab ~~淺~~規則：兩週報一次、問問題
 
 # Things you should know before assembly
 
