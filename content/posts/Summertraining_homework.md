@@ -8,6 +8,7 @@ toc: false
 ---
 # 組裝
 分別使用[Canu](https://github.com/marbl/canu),[Flye](https://github.com/fenderglass/Flye), [Ra](https://github.com/lbcb-sci/ra), [Shasta](https://chanzuckerberg.github.io/shasta/QuickStart.html)組裝ecoli k-12 標準菌株並製作完整組裝報告
+
 菌株位置：
 ```
 /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq
