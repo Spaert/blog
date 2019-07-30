@@ -4,7 +4,7 @@ linktitle: Genome alignment and tools
 date: 2019-07-30T18:42:10+08:00
 image : static
 toc: true
-draft: true
+
 ---
 
 # Local alignment
