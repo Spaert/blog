@@ -22,6 +22,9 @@ toc: false
 ```
 
 * Step3. Run Assembler (要計算時間)
+```
+/usr/bin/time -o time.txt -p nohup yourcommand &
+```
 * Step4. Analysis result
 	1. run blast
 	2. run bandage for contig status 
