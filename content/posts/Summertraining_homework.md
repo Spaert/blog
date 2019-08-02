@@ -11,11 +11,16 @@ toc: false
 
 菌株位置：
 ```
-/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1D.trim.fastq
+/bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq
 ```
 
 * Step1. Run abyss-fac for raw read
 * Step2. Run fastqc 
+
+```
+/bip6_disk/shiuanrung107/fastqc/FastQC/fastqc /bip5_disk/peiwen107/medaka_alignment/ecoli/Ecoli_1.5G.fastq
+```
+
 * Step3. Run Assembler (要計算時間)
 * Step4. Analysis result
 	1. run blast
